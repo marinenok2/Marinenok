@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Grandstander", cursive;
+}
+
+body{
+    background-image: url(../image/9430268.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+h1{
+    font-family: "Nabla", system-ui;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container{
+    max-width: 900px;
+    margin: 20px auto;
+}
+.search{
+    width: 50%;
+    display: flex;
+    margin: 10px auto;
+    
+}
+.search select{
+    width: 350px;
+    height: 45px;
+    margin: 10px;
+        background: -webkit-linear-gradient(89deg, #ff0000 0%, #ffff00 40%, #b0ff00 80%);
+        background: -moz-linear-gradient(89deg, #ff0000 0%, #ffff00 40%, #b0ff00 80%);
+    background-color: #ffff00;
+        outline: none;
+    border-radius: 5px;
+}
+.emojiBlock{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+.emojiBlock>div{
+    width: 50px;
+    height: 50px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.421);
+}
+.emoji-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.info{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.336);
+}
+.info>p{
+    margin: 5px;
+    font-size: 20px;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+}
+.pagination-btn{
+    background: -webkit-linear-gradient(89deg, #ff0000 0%, #ffff00 40%, #b0ff00 80%);
+    background: -moz-linear-gradient(89deg, #ff0000 0%, #ffff00 40%, #b0ff00 80%);
+    width: 30px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 5px;
+}
+.selected-emojis{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    font-size: 20px;
+    margin: 10px 0;
+}
+.active{
+    width: 35px;
+    height: 25px;
+    background: -webkit-linear-gradient(90deg, #ff0000 50%, #ffff00 70%, #b0ff00 0%);
+    background: -moz-linear-gradient(90deg, #ff0000 50%, #ffff00 70%, #b0ff00 0%);
+}
