@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="image/Миюши лого.png" alt="" class="logo">
+                    </div>
+                    <div class="col-md-2">
+                        <a href=""><i class="fa-solid fa-location-dot"></i>г. Курск, ул. Ленина, д. 3</a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="mailto:78003332222@yandex.ru"><i
+                                class="fa-solid fa-envelope"></i>78003332222@yandex.ru</a>
+                    </div>
+                    <div class="col-md-2 tel">
+                        <a href="tel:+380675894678" class="phone">+38(067)589-46-78</a>
+                        <p class="date">Работаем с 11.00 до 23.00</p>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="bth-phone">Обратный звонок</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feedback hidden">
+            <div class="form">
+                <h3 class="title-form-feedback">Заполните форму</h3>
+                <div class="info-form hidden">
+                    <p class="info-form-text"></p>
+                </div>
+                <form id="form">
+                    <label for="userName" class="input">
+                        <h6>Имя<span>*</span></h6>
+                        <input type="text" placeholder="Имя" id="userName" name="userName" data-required="true">
+                    </label>
+                    <label for="email" class="input">
+                        <h6>Email<span>*</span></h6>
+                        <input type="text" placeholder="test@gmail.com" id="email" name="email" data-required="true">
+                    </label>
+                    <label for="password" class="input">
+                        <h6>Телефон<span>*</span></h6>
+                        <input type="text" placeholder="099-999-99-99" id="phone" name="phone" data-required="true">
+                    </label>
+                    <label for="checkbox" class="checkbox">
+                        <input type="checkbox" id="checkbox">
+                        Подтвердите обработку персональных данных
+                    </label>
+                    <div class="button">
+                        <button class="btn">Отправить</button>
+                        <button class="btn btn-close-form">Закрыть</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <nav>
+                <!-- navi -->
+            </nav>
+        </div>
+        <!-- slider -->
+        <div class="slider-wok">
+            <div class="slider-line">
+                <div class="slider-block">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="slider-sale">
+                                    <h2 class="title-slider">Счастливые
+                                        часы</h2>
+                                    <p class="slider-p">с 11:00 до 16:00 в будние дни</p>
+                                    <button class="btn-slider">Подробнее</button>
+                                    <div class="shot">
+                                        <h3>скидка 15%</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-block">
+
+                    <h2 class="title-slider"></h2>
+
+                </div>
+                <div class="slider-block">
+
+                    <h2 class="title-slider"></h2>
+
+                </div>
+            </div>
+
+            <div class="btn-prev"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="btn-next"><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="indicators">
+                <div class="slider-dot active"></div>
+                <div class="slider-dot"></div>
+                <div class="slider-dot"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section>
+                <h2 class="title ">Сеты</h2>
+                <div></div>
+                <h2 class="title ">Роллы</h2>
+                <div></div>
+                <h2 class="title ">Пицца</h2>
+                <div></div>
+                <h2 class="title ">WOK</h2>
+                <div></div>
+                <!-- shushi -->
+            </section>
+            <section>
+                <h2 class="title ten-resson">10 причин купить у нас</h2>
+                <!-- ten -->
+                <div class="row cause ">
+                    <div class="col-md-2 offset-1">
+                        <img src="image/kitchen.png" alt="">
+                        <p>100% ручная работа</p>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="image/dish.png" alt="">
+                        <p>100% свежие ингредиенты</p>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="image/money.png" alt="">
+                        <p>Самые низкие цены на рынке! (Нет ресторанной наценки)</p>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="image/like.png" alt="">
+                        <p>Постоянный контроль качества на всех этапаx</p>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="image/fish.png" alt="">
+                        <p>Только охлажденная рыба (никакой заморозки)</p>
+                    </div>
+
+                </div>
+                <div class="row cause">
+                    <div class="col-md-2 offset-1">
+                        <img src="image/rice.png" alt="">
+                        <p>Мы используем только дорогой рис из Японии</p>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="image/octopus.png" alt="">
+                        <p>Больше начинки, меньше риса!</p>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="image/knife.png" alt="">
+                        <p>Мы не заменяем авокадо огурцом!</p>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="image/pizza.png" alt="">
+                        <p>Вся пицца готовится из итальянской муки и Итальянского соуса</p>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="image/feather-hand-drawn-outline.png" alt="">
+                        <p>Мы не используем майонез!</p>
+                    </div>
+
+                </div>
+            </section>
+            <section>
+                <h2 class="title"> Отзывы</h2>
+                <div class="reviews-internet">
+                    <!-- reviews.js -->
+
+                </div>
+            </section>
+        </div>
+        <section class="reviews">
+            <!-- відгуки -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-3">
+                        <p class="reviews-p">Есть вопросы?</p>
+                        <h2 class="title-reviews">Оставьте свои контакты</h2>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" placeholder=" Имя" id="name-reviews" class="input-reviews"
+                                    autocomplete="off">
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Телефон" id="phone-reviews" class="input-reviews"
+                                    autocomplete="off">
+                                <div class="error-message"></div>
+                            </div>
+                            <button type="submit" class="btn-send">Отправить</button>
+                        </form>
+                        <p class="reviews-p2">Нажимая на кнопку «Отправить», вы даете согласие на обработку своих
+                            персональных
+                            данных.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-company">
+            <h2 class="title">О компании</h2>
+            <div class="container">
+                <div class="row company">
+                    <div class="col-md-8 company-info">
+                        <h3>Заказ и доставка роллов, пиццы и WOK(Вок) в городе Курск</h3>
+                        <p>Суши МИЮШИ открылись в октябре 2012г. и уже завоевали успех у тех, кто ценит японскую кухню и
+                            качественное приготовление
+                            блюд.</p>
+                        <p>
+                            С 2013 года мы осуществляем не только доставку на дом, теперь для вас открыт наш уютный
+                            небольшой зал. Придя сюда, вы
+                            сможете плотно пообедать, насладиться прекрасными напитками, посидеть с друзьями или
+                            обзавестись новыми знакомствами.
+                        </p>
+                        <p>
+                            Открывая зал, Мы преследовали цель предоставить своим посетителям максимум удобства и
+                            комфорта, поэтому, придя сюда в
+                            первый раз, вы почувствуете себя как рыба в воде, окунувшись в домашнюю и теплую обстановку!
+                        </p>
+                        <p>
+                            Особое внимание мы уделяем организации доставки суши и других блюд, которая осуществляется
+                            только по г. Курске. Четкая и
+                            слаженная работа курьеров позволяет максимально сократить время от приготовления блюда до
+                            его попадания на стол
+                            заказчику. Как правило, оно составляет от 20 до 60 минут в зависимости от местонахождения
+                            клиента. Операторы службы
+                            доставки всегда осведомлены обо всех изменениях времени доставки и предупреждают клиентов
+                            заранее, а при возможных
+                            серьезных задержках в связи с дорожной ситуацией предложат Вам альтернативу. Мы беремся
+                            только за ту работу, которую
+                            можем выполнить в срок.
+                        </p>
+                        <p>
+                            В меню суши МИЮШИ представлено все многообразие японской кухни. Классические суши, и роллы
+                            приготовлены в соответствии с
+                            традиционными рецептами. Для любителей нежных и тающих во рту блюд предлагаются роллы с
+                            мясом краба, а также для больших
+                            любителей копченого угря потрясающий ролл Дракон. Для желающих пробовать что-то новое и
+                            необычное – острые ГУНКАНЫ и
+                            новинка нашего меню - ИНАРИ, широкий выбор горячих роллов. Большим компаниям будет удобно
+                            заказать суши и роллы,
+                            объединенные в сеты, включающие сразу несколько видов каждого из этих блюд. Кроме того, меню
+                            суши МИЮШИ не ограничено
+                            только японской кухней, здесь всегда можно заказать горячие и холодные блюда ЛАПША или РИС
+                            WOK с различными мясными и
+                            рыбными наполнителями, салаты, горячие закуски и различные напитки.
+                        </p>
+                        <p>
+                            Оформив у нас заказ суши на дом, клиент может выбрать удобный ему способ оплаты: наличными
+                            при получении заказа или
+                            банковской картой VISA, MasterCard при заполнении специальной формы заказа на сайте или на
+                            дому через переносной
+                            терминал (заранее сообщив оператору о форме оплаты).
+                        </p>
+                        <p>
+                            Информацию по стоимости доставки и минимальной суммы заказа в отдаленные районы г. Мытищ
+                            можно уточнить у оператора по
+                            телефону.</p>
+                    </div>
+                    <div class="col-md-4 map-ingridiens">
+                        <img src="image/Карта градиента 7842.png" alt="Карта градиента">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row menu">
+                <div class="col-md-2">
+                    <ul class="menu-list"> <!-- Добавлен класс "menu-list" -->
+                        <li><a href="#">Сушы</a></li>
+                        <li><a href="#">Гунканы</a></li>
+                        <li><a href="#">Инари</a></li>
+                        <li><a href="#">Супы</a></li>
+                        <li><a href="#">Салаты</a></li>
+                        <li><a href="#">Горячие закуски</a></li>
+                        <li><a href="#">Десерты</a></li>
+                        <li><a href="#">Напитки</a></li>
+                        <li><a href="#">Дополительно</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Сеты</h4>
+                    <ul class="sets-list"> <!-- Добавлен класс "sets-list" -->
+                        <li><a href="#">До 500 руб.</a></li>
+                        <li><a href="#">До 1000 руб. (для двоих)</a></li>
+                        <li><a href="#">До 1500 руб (для двоих - троих)</a></li>
+                        <li><a href="#">До 2000 руб (большая кампания)</a></li>
+                        <li><a href="#">от 2000 руб (очень большая кампания)</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="additional-menu"> <!-- Добавлен класс "additional-menu" -->
+                        <li><a href="#">С угрем</a></li>
+                        <li><a href="#">Горячие</a></li>
+                        <li><a href="#">Запеченые</a></li>
+                        <li><a href="#">Суши</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>Роллы</h4>
+                    <ul class="rolls-list"> <!-- Добавлен класс "rolls-list" -->
+                        <li><a href="#">Традиционные/Классические</a></li>
+                        <li><a href="#">Простые</a></li>
+                        <li><a href="#">Теплые</a></li>
+                        <li><a href="#">Запеченые</a></li>
+                        <li><a href="#">Вегитарианские</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-1">
+                    <h4> Вок</h4>
+                    <ul class="wok-list"> <!-- Добавлен класс "wok-list" -->
+                        <li><a href="#">Яичная</a></li>
+                        <li><a href="#">Удон</a></li>
+                        <li><a href="#">Гречневая</a></li>
+                        <li><a href="#">Стеклянная</a></li>
+                        <li><a href="#">Рис</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>Пицца</h4>
+                    <ul class="pizza-list"> <!-- Добавлен класс "pizza-list" -->
+                        <li><a href="#">Мясная</a></li>
+                        <li><a href="#">Рыбная</a></li>
+                        <li><a href="#">Сырная</a></li>
+                        <li><a href="#">Вегитарианская</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footer-company">
+                <div class="col-md-2">
+                    <p class="agreement agreement-logo">МИЮШИ &copy; 2017</p>
+                </div>
+                <div class="col-md-6"><a href="#" class="agreement">Соглашение на обработку персональных данных</a>
+                </div>
+                <div class="col-md-4">
+                    <div class="network">
+                        <a href="#"><i class="fa-solid fa-w"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="JS/slider.js"></script>
+    <script src="JS/modalWindowForm.js"></script>
+    <script src="JS/formReviews.js"></script>
+    <script src="JS/reviews.js"></script>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
