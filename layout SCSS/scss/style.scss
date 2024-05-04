@@ -1,0 +1,590 @@
+@import "var";
+@import "mixin";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.hidden{
+    display: none;
+}
+.title {
+    font-size: 30px;
+    color: $colorBraun;
+    font-weight: 600;
+    font-family: "Raleway";
+    }
+
+// header
+
+header{
+    background: url(../img/bg_photo.jpg) no-repeat ;
+    background-size: 100%;
+    color: $colorWhite;
+}
+.grey-block{
+    background-color: rgba(75, 74, 74, 0.658);
+}
+.logo img{
+    width: 70px;
+    height: 55px;
+}
+.logo{
+    font-family: 'Raleway', sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    color: $colorWhite;
+    text-decoration: none;
+}
+.nav-link{
+    color: $colorWhite;
+}
+.header{
+    @include mainpading;
+}
+.main-paragraf{
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+}
+.header h1{
+    font-size: 52px;
+    font-weight: 800;
+    font-family: "Raleway";
+}
+.btn-block{
+    @include btn;
+}
+
+// Section1 content
+
+.block-content{
+    text-align: center;
+    img{
+        width: 43px;
+        height: 39px;
+    }
+    h3{
+        font-size: 22px;
+        color: $colorBraun;
+        font-weight: 600;
+        font-family: "Raleway";
+        margin-top: 20px;
+    }
+    p{
+    @include paragraftTwo;
+    padding: $paddingparagraf;
+    position: relative;
+    @include line;
+    }
+}
+.content{
+    padding: $paddingparagraf;
+}
+
+// section2 ideas
+
+.ideas{
+    @include mainpading;
+    background-color: #fbfaf8;
+    p{
+        width: 40%;
+        @include paragraftTwo;
+        margin-top: 55px;
+    }
+}
+
+// section3 text-boxes
+
+.text-boxes{
+    background-image: linear-gradient(90deg, #211b19 0%, #4e3326 100%);
+    padding: 50px 0;
+    h3{
+        font-size: 28px;
+        color: $colorWhite;
+        font-weight: 400;
+        font-family: "Raleway";
+        span{
+            color: #c7b299;
+        }
+    }
+    p{
+        font-size: 18px;
+        color: #615855;
+        font-weight: 300;
+    }
+    button{
+        display: block;
+        align-items: center;
+    }
+}
+
+// section-4 projects
+
+.projects{
+    padding: $paddingsection;
+    text-align: center;
+    p {
+        @include paragrafOne;
+        padding: $paddingparagraf;
+        width: 75%;
+        margin: auto;
+    }
+    a{
+     @include categorias;
+     text-decoration: none;
+    @include flexCenter;
+    flex-wrap: wrap
+    }
+}
+.categorias{
+    @include flexCenter;
+    flex-wrap: wrap;
+    margin: 0 0 30px;
+    li{
+        list-style: none;
+    }
+}
+.projects-img{
+    width: 100%;
+    height: 220px;
+}
+.projects-img img {
+@include imgCol;
+}
+.projects .col-md-4{
+    margin-bottom: 35px;
+    padding: 0 15px;
+}
+.projects-text{
+    width: 100%;
+    height: 100px;
+    background-color: #fbfaf8;
+    text-align: left ;
+    padding: 20px;
+    h3{
+        font-size: 20px;
+        color: #c7b299;
+        font-weight: 500;
+        font-family: 'Raleway', sans-serif;
+    }
+    p{
+        font-size: 14px;
+        line-height: 20px;
+        color: #d1d1d1;
+        font-weight: 300;
+        padding: 0;
+        margin: 0;
+    }
+    .img-block{
+        position: absolute;
+        left: 4%;
+        bottom:31%;
+    }
+}
+.projects-block {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+        .hover{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #352f2dc6;
+        .hover-text{
+            position: absolute;
+            left: 20px;
+            bottom: 26px;
+            text-align: left;
+        h3 {
+            font-size: 20px;
+            color: $colorWhite;
+            font-weight: 500;
+            font-family: "Raleway";
+        }
+        p {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 300;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        }
+        .link{
+            color: $colorWhite;
+            position: absolute;
+            left: 40%;
+            bottom: 50%;
+            font-size: 23px;
+        }
+        }
+    &:hover{
+        .hover{
+            display: block;
+        }
+    }
+    }
+.videoPresentation{
+    margin-top: 80px;
+    background: url(../img/photo_main_bg.png) no-repeat;
+    background-size: 100%;
+    background-position: 30% 30%;
+    position: relative;
+    @include mainpading;
+    .grey-block{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(75, 74, 74, 0.658);
+        z-index: 2;
+    }
+    .text-video{
+        position: absolute;
+        z-index: 3;
+        left: 18%;
+        bottom: 25%;
+        h2 {
+                color: $colorWhite;
+                font-weight: 500;
+            }
+            p {
+                @include paragrafOne;
+                color: $colorWhite;
+            }
+        }
+}
+// 
+.features{
+    padding-top: 80px;
+    img{
+        @include imgCol;
+    }
+    .col-md-7{
+        text-align: left;
+        padding: 100px 0 40px 0;
+        p{
+            width: 100%;
+            margin: 0;
+            @include paragrafOne;
+        }
+        li{
+            list-style: none;
+            padding-left: 30px;
+            position: relative;
+            @include paragrafOne;
+            color: $colorTextP;
+            &::after{
+                content:"\f054";
+                font-family: FontAwesome;
+                width: 21px;
+                height: 21px;
+                border-radius: 10px;
+                background-color: #c7b299;
+                @include flexCenter;
+                color: $colorWhite;
+                position: absolute;
+                top: 2px;
+                left: 0;
+            }
+            &:hover{
+                color: #242424;
+        
+            }
+        }
+    }
+}
+
+// section-5 Counters
+
+.counters{
+    padding: $paddingsection;
+    text-align: center;
+    background-image: linear-gradient(90deg, #211b19 0%, #4e3326 100%);
+    .counters-block{
+        @include flexCenter;
+        gap: 10px;
+        flex-wrap: wrap;
+        .counters-item{
+            margin: 0 30px;
+            img{
+                width: 44px;
+                height: 44px;
+            }
+            h4{
+                font-size: 48px;
+                line-height: 36px;
+                color: $colorWhite;
+                font-weight: 300;
+                margin:20px 0 ;
+            }
+            p{
+                @include paragrafOne;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: #c7b299;
+                padding-bottom: 30px;
+                position: relative;
+                &::before{
+                    content: "";
+                    width: 30px;
+                    height: 2px;
+                    background-color: $colorWhite;
+                    position: absolute;
+                    bottom: 0;
+                    left: 40%;
+                }
+            }
+        }
+    }
+}
+
+// section-6 posts
+
+.posts{
+    text-align: center;
+    padding: $paddingsection;
+    p {
+            width: 60%;
+            margin: 40px auto;
+        }
+   .posts-block{
+    max-width: 370px;
+    position: relative;
+    margin: auto;
+      
+        .post-img img{
+            @include imgCol;
+            height: 230px;
+        }
+        .calendar{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            
+            .span-one{
+                width: 50px;
+                height: 35px;
+                background-color: #363636;
+                font-size: 24px;
+                line-height: 20px;
+                color:$colorWhite;
+                font-weight: 300;
+                border-radius: 3px 3px 0 0;
+                @include flexCenter;
+            }
+            .span-two{
+                width: 50px;
+                height: 25px;
+                background-color: #242424;
+                font-size: 12px;
+                line-height: 20px;
+                color: $colorWhite;
+                font-weight: 400;
+                font-family: 'Roboto', sans-serif;
+                border-radius: 0 0 3px 3px;
+            }
+        }
+        .posts-text{
+           max-width: 370px;
+            height: 175px;
+            border: 2px solid #c7b29989;
+            border-top: none;
+            margin: auto;
+            text-align: left;
+            padding: 30px;
+            h3{
+                font-size: 20px;
+                color: $colorBraun;
+                font-weight: 500;
+                font-family: "Raleway";
+            }
+            p{
+                width: 100%;
+                @include paragraftTwo;
+                line-height: 22px;
+                margin: 10px 0; 
+            }
+            a{
+                @include paragraftTwo;
+                color: #c7b299;
+                text-decoration: none;
+                padding-right: 10px;
+                position: relative;
+                &::before{
+                    content: url(../img/arrow02-brown.png);
+                    position: absolute;
+                    right: 0;
+                    top: -15%;
+
+                }
+            }
+        }
+        .posts-hover{
+            width: 100%;
+            height: 100%;
+            background-color:#352f2dcb;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display:none ;
+        }
+        &:hover{
+            .posts-hover{
+                display: block;
+            }
+            .calendar{
+                z-index: 3;
+                .span-one{
+                    background-color: #c7b199;
+                }
+                .span-two{
+                    background-color: #a48d71;
+                }
+            }
+            .posts-text{
+                position: absolute;
+                z-index: 3;
+                background-color: #352f2d;
+                h3, a{
+                    color: #c7b299;
+                }
+                p{
+                    color: $colorWhite;
+                }
+            }
+        }
+    }
+}
+
+// section-7 Partneres
+
+.partners{
+    background: url(../img/photo12.png) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 200px 0;
+    position: relative;
+    .grey-block{
+        width: 100%;
+        height: 100%;
+        background-color: #352f2dad;
+        position: absolute;
+        top:0;
+        left:0;
+
+    }
+    .logo-block{
+        position: absolute;
+        z-index: 3;
+        top: 25%;
+        left: 13%;
+        @include flexCenter;
+        gap:80px;
+        flex-wrap: wrap;
+    }
+}
+
+// footer
+
+.footer-contact{
+    padding: $paddingsection;
+    background-color: #191919;
+     p {
+         @include paragraftTwo;
+         &:hover{
+            color: #a48d71;
+         }
+     }
+     h3{
+        font-size: 24px;
+        color: $colorWhite;
+        font-weight: 700;
+        font-family: "Raleway";
+        margin-bottom: 20px;
+     }
+     a{
+        text-decoration: none;
+     }
+     .data{
+        &:hover{
+            color: $colorWhite;
+        }
+     }
+     .link{
+        color: #c4b8ab;
+     }
+     .line-footer{
+        width: 100%;
+        height: 1px;
+        background-color: #8c8c8c6d;
+        margin: 20px 0;
+     }
+     .footer-img img{
+        @include imgCol;
+        height: 130px;
+        padding: 10px 0;
+     }
+    .block-one{
+        p{
+            margin: 20px 0;
+        }
+        .footer-link{
+            font-size: 14px;
+            line-height: 20px;
+            color: #d1d1d1;
+            font-weight: 400;
+            text-decoration: none;
+            padding-right: 10px;
+            position: relative;
+            &::before{
+                content: url(../img/arrow02.png);
+                position: absolute;
+                right: 0;
+                top: -10%;
+            }
+        }
+    }
+}
+.footer-end{
+    background-color: #101010;
+    padding: $paddingsection;
+    font-size: 13px;
+    line-height: 20px;
+    color: $colorBraun;
+    font-weight: 300;
+    .col-md-6{
+        display: flex;
+        a{
+            text-decoration: none;
+            color: $colorBraun;
+            &:hover{
+                color: #a48d71;
+            }
+        }
+        .lineY{
+            width: 1px;
+            height: 20px;
+            background-color: #8c8c8c6d;
+            margin: 0 10px;
+        }
+        span{
+            color:#d1d1d1;
+        }
+    }
+    .end-right{
+       padding-left: 19%;
+    }
+}
+
+
