@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 2px solid gray;
+    border-radius: 25px;
+    background-color: white;
+}
+.form {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: white;
+}
+.validation-yes, .validation-no{
+    width: 90%;
+    height: 50px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 15px;
+    color: rgb(36, 143, 107);
+}
+.validation-no{
+    background-color: rgb(223, 113, 113);
+    color: rgb(194, 71, 44);
+}
+.info-form{
+    width: 90%;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-left: 20px solid rgb(123, 154, 199);
+    margin: 20px auto;
+    font-size: 18px;
+    color: rgb(123, 154, 199);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.input{
+    margin: 10px 0;
+}
+.input input{
+    width: 95%;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+.input span{
+    color: red;
+    font-size: 20px;
+    margin-left: 5px;
+}
+.checkbox{
+    margin: 10px;
+}
+textarea{
+    width: 95%;
+    height: 100px;
+    margin: 10px 0;
+}
+.btn{
+    width: 45%;
+    height: 40px;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(207, 193, 193);
+   
+}
+.btn:hover{
+    border: 2px solid aquamarine;
+   background: none;
+   color: aquamarine;
+}
+
+.error input{
+    border: 3px solid red;
+}
+.validYes input{
+    border: 3px solid rgb(40, 199, 40);
+}
+.error-p{
+    color: red;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
