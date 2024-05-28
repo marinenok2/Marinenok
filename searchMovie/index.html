@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Films</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Search:</h1>
+        <div class="search">
+            <label for="">Title:
+            <input type="text" id="search-movie-input">
+            </label>
+            <label for="">Type:
+                <select id="type-movie">
+                    <option value="movie">Movie</option>
+                    <option value="series">Series</option>
+                    <option value="episode">Episode</option>
+                </select>
+            </label>
+            <button class="btn" id="search">Search</button>
+        </div>
+        <div class="container-search"></div>
+        <div class="pagination"></div>
+    </div>
+   
+    <script src="JS/script.js"></script>
+</body>
+</html>

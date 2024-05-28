@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kurale", serif;
+}
+body{
+    background-color: antiquewhite;
+}
+h1, h2{
+    text-align: center;
+}
+.container{
+    max-width: 1000px;
+    margin: 50px auto;
+}
+.search{
+    max-width: 400px;
+    border: 1px solid grey;
+    margin: 20px auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.search label{
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+#type-movie, #search-movie-input{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    padding-left: 5px;
+}
+.btn{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    outline: none;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.movieSearchNot{
+    width: 50%;
+    margin: 20px auto;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid grey;
+    text-align: center;
+    border-radius: 5px;
+}
+.movie{
+    width: 32%;
+    border: 1px solid grey;
+    display: flex;
+    padding: 10px;
+
+}
+.movie img{
+    width: 40%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.movie .info{
+    padding: 10px;
+    font-size: 20px;
+}
+.movie .info h3{
+    margin: 10px 0;
+}
+.movie .info a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    text-decoration: none;
+    background-color: rgb(237, 234, 234);
+    color: black;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid grey;
+}
+.container-search{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin: 20px 0;
+}
+.pagination-btn{
+    width: 35px;
+    height: 25px;
+    border: 2px solid rgb(198, 196, 196);
+    border-radius: 5px;
+}
+.active{
+    border: 2px solid rgb(59, 58, 58);
+}
+.film-info{
+    display: flex;
+    margin: 10px 0;
+    border: 1px solid grey;
+    padding: 10px;
+}
+.film-info-img{
+    width: 40%;
+}
+.film-info-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.film-info-text{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.film-info-text p{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+.film-info-text span{
+    width: 70%;
+}
