@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 2px solid gray;
+    border-radius: 25px;
+    background-color: white;
+}
+.form {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.info-form{
+    width: 90%;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-left: 20px solid rgb(123, 154, 199);
+    margin: 20px auto;
+    font-size: 18px;
+    color: rgb(123, 154, 199);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.input{
+    margin: 10px 0;
+}
+.input input{
+    width: 95%;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+.input span{
+    color: red;
+    font-size: 20px;
+    margin-left: 5px;
+}
+.checkbox{
+    margin: 10px;
+}
+textarea{
+    width: 95%;
+    height: 100px;
+    margin: 10px 0;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 16px;
+}
+.btn{
+    width: 45%;
+    height: 40px;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(207, 193, 193);
+   
+}
+.btn:hover{
+    border: 2px solid aquamarine;
+   background: none;
+   color: aquamarine;
+}
+
+.error input, .error textarea{
+    border: 1px solid red;
+}
+.validYes input, validYes textarea{
+    border: 1px solid rgb(40, 199, 40);
+}
+.error-p{
+    color: red;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
