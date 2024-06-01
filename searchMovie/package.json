@@ -1,0 +1,13 @@
+{
+  "name": "searchmovie",
+  "version": "1.0.0",
+  "description": "searches for movies by title",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node script.js"
+  },
+  
+  "author": "Marinenok",
+  "license": "ISC"
+}
