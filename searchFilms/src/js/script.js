@@ -54,9 +54,11 @@ export async function showMovie() {
         createBlockMovie(moviesToShow);
         renderPagination(listMovie.length);
     } else {
+        containerSearch.innerHTML = '';
         const movieNotSearchHTML = `
              <div class="movieSearchNot">
-                <p class="info">Немає результатів для введених критеріїв пошуку.</p>
+                <p class="info">Enter the name of the movie only in Latin
+                There are no results for the given search criteria.</p>
             </div>
         `
         containerSearch.insertAdjacentHTML('beforeend', movieNotSearchHTML);
