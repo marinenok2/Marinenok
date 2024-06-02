@@ -1,9 +1,10 @@
 'use script'
-async function getIDMovie(id) {
+import '../css/style.css'
+ export async function getIDMovie(id) {
     const res = await fetch(`https://www.omdbapi.com/?i=${id}&apikey=cefde68d`);
     return await res.json()
 }
-async function showPageMovie() {
+ export async function showPageMovie() {
     const container = document.querySelector('.container');
     let URLData = new URLSearchParams(window.location.search);
     let id = URLData.get('movie_id');
@@ -31,4 +32,4 @@ async function showPageMovie() {
     container.insertAdjacentHTML('beforeend', postMovieHTML)
 }
 
-showPageMovie()
+document.addEventListener('DOMContentLoaded', showPageMovie);

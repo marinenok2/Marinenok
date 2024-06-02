@@ -36,7 +36,7 @@ async function movieSearch(title, type) {
     return data.Search;
 }
 
-async function showMovie() {
+export async function showMovie() {
     const titleSearch = document.getElementById('search-movie-input');
     const title = titleSearch.value;
     const type = select.value;
@@ -66,7 +66,7 @@ async function showMovie() {
 
 function createBlockMovie(data) {
     if (!data) return;
-
+    containerSearch.innerHTML = '';
     localStorage.setItem('lastSearchResults', JSON.stringify(data)); 
     
     data.forEach(item => {
@@ -100,9 +100,9 @@ function renderPagination(totalItems) {
     localStorage.setItem('lastCurrentPage', currentPage);
 
     paginationContainer.querySelectorAll('.pagination-btn').forEach(button => {
-        button.addEventListener('click', () => {
+        button.addEventListener('click', async () => {
             currentPage = parseInt(button.dataset.page);
-            showMovie();
+            await showMovie();
         });
     });
 }
